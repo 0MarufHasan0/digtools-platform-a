@@ -34,7 +34,7 @@ const Banner = () => {
 
             <button 
 
-            class="btn font-bold text-[14px] p-6 rounded-full 
+            className="btn font-bold text-[14px] p-6 rounded-full 
             bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white">
             Explore Products
             
@@ -42,7 +42,7 @@ const Banner = () => {
 
             <button 
             
-            class="btn btn-outline font-bold text-[14px] p-6 
+            className="btn btn-outline font-bold text-[14px] p-6 
              bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent  border-[#4F39F6]  rounded-full "> 
              <Play color="#4F39F6" />
              
