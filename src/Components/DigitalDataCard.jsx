@@ -1,6 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const DigitalDataCard = ({ tool }) => {
+const DigitalDataCard = ({ tool, cartItems, setCartItems }) => {
+  const [isBuying, setIsBuying] = useState(false);
+
+const handleBuyNow = () => {
+  setIsBuying(true);
+  setCartItems([...cartItems, tool]);
+
+
+}
+
+
+
     return (
         <div>
 
@@ -38,7 +49,9 @@ const DigitalDataCard = ({ tool }) => {
 ))}
     </ul>
     <div className="mt-6">
-      <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full shadow-lg  btn-block">Buy Now</button>
+      <button className={`btn  ${isBuying?'btn-disabled':''} bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full shadow-lg  btn-block `}    onClick={handleBuyNow}>
+        {isBuying ? 'Purchased' : 'Buy Now'}
+      </button>
     </div>
   </div>
 </div>

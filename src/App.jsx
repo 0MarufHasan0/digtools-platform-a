@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Stats from './Components/Stats'
 import DigitalToolsData from './Components/DigitalToolsData'
 
+
 const digitalToolsData = async () => {
    const res = await fetch ("/Data.json")
    return res.json()
@@ -16,16 +17,25 @@ const digitalTools  = digitalToolsData()
 
 function App() {
  
+  
+ 
 
   return (
     <>
     <Navbar/>
       <Banner/>
         <Stats/>
+
        
        <Suspense fallback = {<span class="loading loading-spinner text-success"></span>}>
-         <DigitalToolsData digitalTools={digitalTools}/>
-       </Suspense>
+       
+          <DigitalToolsData digitalTools={digitalTools} />
+        
+      </Suspense>
+
+     
+  
+       
         
     </>
   )
