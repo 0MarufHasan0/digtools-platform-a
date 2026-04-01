@@ -3,8 +3,9 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div>
-           <div className="navbar container mx-auto">
+        <div className='sticky bg-white top-0 z-60'>
+          <div>
+           <div className="navbar container mx-auto border-b border-gray-300 shadow-lg ">
       <div className="navbar-start">
         <a className="  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent font-bold text-2xl  md:text-4xl">DigTools</a>
       </div>
@@ -31,6 +32,7 @@ const Navbar = () => {
         <a className="btn border-none hidden md:flex">Login</a>
         <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white"> Get in Touch</a>
       </div>
+    </div>
     </div>
         </div>
     );
