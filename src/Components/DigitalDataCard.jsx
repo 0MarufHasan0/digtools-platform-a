@@ -21,8 +21,8 @@ const handleBuyNow = () => {
 
 
 
-<div className="card w-96 bg-base-100 shadow-sm">
-  <div className="card-body">
+<div className="card w-96 bg-base-100 ">
+  <div className="card-body shadow-sm transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl">
    <div className='flex justify-end'>
      <span className={`badge  badge-soft ${tool.tagType === 'new' ? 'badge-success' : tool.tagType === 'popular' ? 'badge-secondary' : 'badge-warning animate-pulse'}  `}>{tool.tagType}</span>
    </div>
