@@ -36,7 +36,7 @@ const DigitalToolsData = ({digitalTools}) => {
                 type="radio"
                  name="my_tabs_1"
                   className={`tab rounded-full w-40  ${activeTab === 'Cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-white-100 text-[16px]  font-bold'}`} 
-                  aria-label={`Cart (${cartItems    .length})`}
+                  aria-label={`Cart (${cartItems.length})`}
                   onClick={() => setActiveTab('Cart')}
                 />
 

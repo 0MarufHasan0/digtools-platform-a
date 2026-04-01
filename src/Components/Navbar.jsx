@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
     return (
          <div className=' sticky top-0 z-60 bg-white'>
             <div className="navbar   border-b-gray-400 border-b-2 shadow-lg">
