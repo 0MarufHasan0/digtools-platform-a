@@ -6,6 +6,8 @@ import Navbar from './Components/Navbar'
 import Stats from './Components/Stats'
 import DigitalToolsData from './Components/DigitalToolsData'
 import GetStart from './Components/GetStart'
+import PricingCart from './Components/PricingCard'
+import PricingCard from './Components/PricingCard'
 
 
 const digitalToolsData = async () => {
@@ -35,6 +37,7 @@ function App() {
       </Suspense>
       
 <GetStart/>
+<PricingCard/>
      
   
        
