@@ -4,7 +4,7 @@ const PricingCard = () => {
     return (
         <div>
 
-             <div className='container mx-auto bg-white-100  rounded-lg shadow-lg mt-10 lg:mt-20'>
+             <div className='container mx-auto  bg-white-100  rounded-lg  mt-10 lg:mt-20'>
                 {/* Tittle */}
                    <div className='text-center space-y-2'>
                     <h1 className='text-4xl font-bold'>Simple, Transparent Pricing</h1>
@@ -14,7 +14,7 @@ const PricingCard = () => {
 
                    {/* Card 1 */}
 
-                   <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-25'>
+                   <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-15'>
 
                    <div className="card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
@@ -65,7 +65,7 @@ const PricingCard = () => {
 
                    {/* Card 2 */}
 
-                   <div className="card   w-96 bg-base-100 shadow-sm">
+                   <div className="card mt-5  w-96 bg-base-100 shadow-sm">
   <div className="card-body bg-linear-to-r relative rounded-md transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl from-[#4F39F6] to-[#9514FA] text-white">
     <span className="badge badge-xs font-bold text-xs absolute -top-5 right-25 w-50 p-4  badge-warning  ">Most Popular</span>
     <div className=" space-y-2">

@@ -8,6 +8,7 @@ import DigitalToolsData from './Components/DigitalToolsData'
 import GetStart from './Components/GetStart'
 import PricingCart from './Components/PricingCard'
 import PricingCard from './Components/PricingCard'
+import Footer from './Components/Footer'
 
 
 const digitalToolsData = async () => {
@@ -38,6 +39,7 @@ function App() {
       
 <GetStart/>
 <PricingCard/>
+<Footer/>
      
   
        
