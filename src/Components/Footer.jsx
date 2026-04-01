@@ -7,11 +7,11 @@ const Footer = () => {
     return (
         <div>
 
-            <div className='bg-[#101727] '>
+            <div className= 'bg-[#101727] '>
 
             
 
-            <footer className="footer   sm:footer-horizontal text-neutral-content p-15 mt-30">
+            <footer className="footer sm:footer-horizontal text-neutral-content p-15 mt-30">
                  
    <div className='space-y-2'>
      <h1 className=" text-4xl  font-bold text-white">DigiTools</h1>
