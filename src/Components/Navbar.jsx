@@ -1,7 +1,7 @@
 import { Menu, ShoppingCart, X } from 'lucide-react';
 import React, { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ cartCCount }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   
     return (
@@ -23,15 +23,21 @@ const Navbar = () => {
 
                 <div className="navbar-end gap-5 md:mx-4">
 
-                    <div className='hidden md:flex gap-5  items-center'>
+                    <div className=' gap-5  items-center'>
                         
-                        <ShoppingCart className=' cursor-pointer' />
+                     {
+                        cartCCount > 0 && (
+                            <div className=' bg-red-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center'>
+                                {cartCCount}
+                            </div>
+                        )
+                     } <ShoppingCart className=' cursor-pointer' />
 
-                        <a className='font-semibold btn-outline text-[#101727] cursor-pointer'>Login</a>
+                        <a className=' hidden md:flex font-semibold btn-outline text-[#101727] cursor-pointer'>Login</a>
                     </div>
 
                     
-                <btn className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</btn>
+                <btn className="btn hidden md:flex bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</btn>
                     <button className='md:hidden' onClick={() => setMenuOpen(!menuOpen)}>
                         {menuOpen ? <X size={28} /> : <Menu size={28} />}
                     </button>
@@ -40,15 +46,15 @@ const Navbar = () => {
 
             {
                 menuOpen && (
-                    <div className='md:hidden flex flex-col gap-3 pb-4 font-semibold text-[#101727]'>
+                    <div className='md:hidden absolute left-0 top-full w-full bg-white shadow-md px-4 py-4 flex flex-col gap-3 font-semibold text-[#101727]'>
                         <a>Products</a>
                         <a>Features</a>
                         <a>Pricing</a>
                         <a>Testimonials</a>
                         <a>FAQ</a>
-                        <div className='flex gap-5 items-center mt-2'>
-                            <ShoppingCart />
-                            <a>Login</a>
+                        <div className='flex flex-col gap-3 mt-3'>
+                          <btn className=" w-40 p-2 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</btn>
+                            <a >Login</a>
                         </div>
                     </div>
                 )

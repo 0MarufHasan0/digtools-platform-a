@@ -2,7 +2,7 @@ import React, { Suspense, use, useState  } from 'react';
 import DigitalDataCard from './DigitalDataCard';
 import Cart from './Cart';
 
-const DigitalToolsData = ({digitalTools}) => {
+const DigitalToolsData = ({digitalTools , setCartCount}) => {
 
    
     const toolsData = use(digitalTools)
@@ -47,7 +47,7 @@ const DigitalToolsData = ({digitalTools}) => {
                {
                 activeTab === 'Products' && (
                     toolsData.map((tool) => (
-                        <DigitalDataCard key={tool.id} tool={tool} cartItems={cartItems} setCartItems={setCartItems} />
+                        <DigitalDataCard key={tool.id} tool={tool} cartItems={cartItems} setCartItems={setCartItems}  setCartCount={setCartCount}/>
                     ))
                 )
                }
