@@ -1,15 +1,19 @@
 import { FileText } from 'lucide-react';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cartItems ,setCartItems}) => {
 
     const handleRemoveItem = (id) => {
         const filteredItems = cartItems.filter(item => item.id !== id);
+        toast.warning("Item removed from cart!");
         setCartItems(filteredItems);
     };
 
 
 const handleCheckout = () => {
+
+     toast.success("Proceed Done !")
     
     setCartItems([]);
 }

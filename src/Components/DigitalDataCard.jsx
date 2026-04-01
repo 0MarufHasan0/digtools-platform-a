@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const DigitalDataCard = ({ tool, cartItems, setCartItems }) => {
   const [isBuying, setIsBuying] = useState(false);
 
 const handleBuyNow = () => {
   setIsBuying(true);
+  toast.success("Add to Cart !")
   setCartItems([...cartItems, tool]);
 
 
