@@ -7,12 +7,12 @@ const Banner = () => {
     return (
         <div>
             <div className=" container mt-30 mx-auto flex items-center overflow-hidden">
-      <div className=" mx-auto grid  grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+      <div className=" mx-auto grid  grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-center ">
         
         {/* Left Content */}
 
-        <div className="space-y-4 lg:order-1 order-2">
-          <div className="inline-flex items-center gap-2 bg-[#E1E7FF] border border-none text-[#4F39F6] text-sm font-medium px-5 py-2 rounded-full">
+        <div className="space-y-4 lg:order-1 text-center md:text-left order-2">
+          <div className="inline-flex items-center justify-center lg:justify-start gap-2 bg-[#E1E7FF] border border-none text-[#4F39F6] text-sm font-medium px-5 py-2 rounded-full">
             <img src={badgeImg} alt="New" className='animate-pulse' />New: AI-Powered Tools Available
           </div>
 
@@ -30,7 +30,7 @@ const Banner = () => {
 
           {/* Buttons */}
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
 
             <button 
 
@@ -60,9 +60,9 @@ const Banner = () => {
         <div className=" lg:order-2 order-1 flex justify-center lg:justify-end">
           <div >
             <img
-              className="h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
+              className="h-62.5 md:h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
               src={bannerImg}
-              alt="AI Models Banner"
+              alt="banner"
             />
           </div>
         </div>

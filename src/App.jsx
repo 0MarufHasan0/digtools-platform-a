@@ -5,6 +5,7 @@ import Banner from './Components/Banner'
 import Navbar from './Components/Navbar'
 import Stats from './Components/Stats'
 import DigitalToolsData from './Components/DigitalToolsData'
+import GetStart from './Components/GetStart'
 
 
 const digitalToolsData = async () => {
@@ -32,7 +33,8 @@ function App() {
           <DigitalToolsData digitalTools={digitalTools} />
         
       </Suspense>
-
+      
+<GetStart/>
      
   
        
